@@ -16,10 +16,10 @@ export default function Home() {
           headerStyle: { backgroundColor: COLORS.lightWhite },
           headerShadowVisible: false,
           headerLeft: () => (
-            <ScreenHeaderBtn iconsUrl={icons.menu} dimension={"60%"} />
+            <ScreenHeaderBtn iconUrl={icons.menu} dimension={"60%"} />
           ),
           headerRight: () => (
-            <ScreenHeaderBtn iconsUrl={icons.profile} dimension={"100%"} />
+            <ScreenHeaderBtn iconUrl={images.profile} dimension={"100%"} />
           ),
           headerTitle: "",
         }}
