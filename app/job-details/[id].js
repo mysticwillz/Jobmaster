@@ -78,7 +78,7 @@ const JobDetails = () => {
             <ScreenHeaderBtn
               iconUrl={icons.left}
               dimension="60%"
-              handlePress={() => router.back()}
+              handlePress={() => router.push("/")}
             />
           ),
           headerRight: () => (
@@ -89,12 +89,7 @@ const JobDetails = () => {
       />
 
       <>
-        <ScrollView
-          showsVerticalScrollIndicator={false}
-          refreshControl={
-            <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
-          }
-        >
+        <ScrollView showsVerticalScrollIndicator={false}>
           {isLoading ? (
             <ActivityIndicator size="large" color={COLORS.primary} />
           ) : error ? (
